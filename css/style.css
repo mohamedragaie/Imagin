@@ -1,15 +1,14 @@
 /* start extened classes */
-.my-button, .about button, .works button, .experience button {
+.my-button, .about button, .works button, .experience button, .skills button {
   color: #fff;
   background-color: #F4AD24;
   border-radius: 5px;
   border: 0;
-  font-weight: 700;
-  font-size: 25px;
+  font-size: 18px;
   height: 50px;
   cursor: pointer; }
 
-.main-h, .works h2, .experience h2 {
+.main-h, .works h2, .experience h2, .skills h2 {
   font-size: 100px;
   margin-bottom: 20px;
   font-weight: 700;
@@ -17,7 +16,7 @@
   color: #dde;
   margin-top: 80px; }
 
-.second-h, .works h3, .experience h3 {
+.second-h, .works h3, .experience h3, .skills h3 {
   color: #333;
   font-weight: 700;
   margin-bottom: 20px; }
@@ -120,7 +119,7 @@ header {
   background-image: url(../images/home_bg.jpg);
   background-attachment: fixed;
   background-size: cover;
-  background-position: center; }
+  background-position: center top; }
   header .header-text {
     margin-left: 10%;
     color: #fff; }
@@ -161,14 +160,18 @@ header {
 
 /*end (about) section */
 /* start (works) section */
+.works-img {
+  background-image: url(../images/works_bg_900x1600.jpg);
+  background-position: center top;
+  background-size: cover;
+  height: 100%; }
+
 .works {
   padding: 0 70px !important;
   background-color: #F2F2F2; }
   .works h3 {
     margin-bottom: 45px; }
   .works button {
-    font-size: 25px;
-    font-weight: 500;
     margin: 40px 0 65px; }
   .works .works-imgs .imgs {
     margin-bottom: 30px; }
@@ -189,12 +192,6 @@ header {
   .works .works-imgs img {
     height: 100%;
     width: 100%; }
-
-.works-img {
-  background-image: url(../images/works_bg_900x1600.jpg);
-  background-position: center center;
-  background-size: cover;
-  height: 100%; }
 
 /* end (works) section */
 /* start (experience) section */
@@ -228,11 +225,51 @@ header {
     letter-spacing: 1.5px;
     line-height: 2; }
   .experience button {
-    font-size: 25px;
-    font-weight: 500;
     margin: 40px 0 65px; }
 
 /* end (experience) section */
+/* start (skills) section */
+.skills {
+  padding: 0 70px !important; }
+  .skills h2 {
+    margin-top: 80px; }
+  .skills h3 {
+    margin-bottom: 45px; }
+  .skills h4 {
+    margin: 70px 0 25px;
+    display: inline-block;
+    font-weight: 600;
+    color: #555; }
+  .skills p {
+    color: #999;
+    font-size: 19px;
+    line-height: 1.7; }
+  .skills .skills-intro {
+    color: #999;
+    font-size: 20px;
+    font-family: initial;
+    letter-spacing: 1.5px;
+    line-height: 1.7; }
+  .skills button {
+    margin: 40px 0 65px; }
+  .skills .progress-h {
+    padding: 20px 0; }
+  .skills .progress-pirsent {
+    width: 100%;
+    height: 12px;
+    background-color: #ddd; }
+  .skills .progress-pirsent span {
+    display: block;
+    background-color: #F4AD24;
+    height: 100%; }
+
+.skills-img {
+  background-image: url(../images/skill_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%; }
+
+/* end (skills) section */
 @media screen and (max-width: 1200px) {
   .header-text h1 {
     font-size: 50px !important; }
@@ -245,7 +282,12 @@ header {
     font-size: 18px !important; }
 
   .about-img, .experience-img {
-    height: 700px; } }
+    height: 700px;
+    background-position: center; }
+
+  .skills-img {
+    background-position: top;
+    height: 70vh; } }
 @media screen and (max-width: 768px) {
   h2, h3, p {
     text-align: center !important; }
