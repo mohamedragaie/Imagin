@@ -1,5 +1,5 @@
 /* start extened classes */
-.my-button, .about button, .works button, .experience button, .skills button {
+.my-button, .about button, .works button, .experience button, .skills button, .contact-b {
   color: #fff;
   background-color: #F4AD24;
   border-radius: 5px;
@@ -8,7 +8,7 @@
   height: 50px;
   cursor: pointer; }
 
-.main-h, .works h2, .experience h2, .skills h2 {
+.main-h, .works h2, .experience h2, .skills h2, .clients h2, .contact h2 {
   font-size: 100px;
   margin-bottom: 20px;
   font-weight: 700;
@@ -16,7 +16,7 @@
   color: #dde;
   margin-top: 80px; }
 
-.second-h, .works h3, .experience h3, .skills h3 {
+.second-h, .works h3, .experience h3, .skills h3, .clients h3, .contact h3 {
   color: #333;
   font-weight: 700;
   margin-bottom: 20px; }
@@ -39,9 +39,9 @@
   background-color: #505865;
   border: 0;
   border-radius: 5px;
-  cursor: pointer;
-  /* end icon nav-bar for small and medium screens */ }
+  cursor: pointer; }
 
+/* end icon nav-bar for small and medium screens */
 .all-header {
   position: relative;
   overflow: hidden;
@@ -82,11 +82,13 @@ aside {
   aside .brand {
     color: #fff;
     font-weight: bold;
-    font-size: 35px;
-    font-family: initial;
-    letter-spacing: 5px;
+    font-size: 45px;
+    letter-spacing: 2px;
     text-align: center;
     padding: 60px 0;
+    border-bottom: 1px solid #505865;
+    padding-right: 7px;
+    font-family: initial;
     border-bottom: 1px solid #505865; }
   aside ul {
     padding-left: 0px; }
@@ -174,7 +176,8 @@ header {
   .works button {
     margin: 40px 0 65px; }
   .works .works-imgs .imgs {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    height: 200px; }
   .works .works-imgs .imgs:hover .overlay {
     opacity: 1 !important; }
   .works .works-imgs .imgs .overlay {
@@ -187,7 +190,7 @@ header {
   .works .works-imgs .imgs .overlay a {
     color: #F4AD24;
     position: absolute;
-    left: 46%;
+    left: 33%;
     top: 44%; }
   .works .works-imgs img {
     height: 100%;
@@ -229,6 +232,12 @@ header {
 
 /* end (experience) section */
 /* start (skills) section */
+.skills-img {
+  background-image: url(../images/skill_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%; }
+
 .skills {
   padding: 0 70px !important; }
   .skills h2 {
@@ -263,13 +272,77 @@ header {
     background-color: #F4AD24;
     height: 100%; }
 
-.skills-img {
-  background-image: url(../images/skill_bg.jpg);
+/* end (skills) section */
+/* start (clients) section */
+.clients-img {
+  background-image: url(../images/testimonial_bg.jpg);
   background-position: center;
   background-size: cover;
   height: 100%; }
 
-/* end (skills) section */
+.clients {
+  padding: 0 70px !important;
+  background-color: #1C212A; }
+  .clients h2 {
+    color: #282F3C; }
+  .clients h3 {
+    margin-bottom: 45px;
+    color: #fff; }
+  .clients .clients-intro {
+    color: #6F8890;
+    font-size: 20px;
+    font-family: initial;
+    letter-spacing: 1.5px;
+    line-height: 2;
+    margin-bottom: 70px; }
+  .clients .clients-say {
+    margin-bottom: 65px;
+    overflow: hidden; }
+    .clients .clients-say img {
+      width: 22%; }
+    .clients .clients-say .say {
+      width: 75%;
+      float: right; }
+      .clients .clients-say .say p {
+        color: #eee;
+        margin-bottom: 22px;
+        line-height: 1.7;
+        font-size: 20px; }
+      .clients .clients-say .say span {
+        color: #555;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 3px; }
+  .clients .clients-say:last-child {
+    margin-bottom: 140px; }
+
+/* end (clients) section */
+/* start (contact) section */
+.contact-img {
+  background-image: url(../images/contact_bg.jpg);
+  background-position: center top;
+  background-size: cover;
+  height: 100%; }
+
+.contact-b {
+  border-radius: 0;
+  height: 100px;
+  font-size: 25px; }
+
+.contact {
+  padding: 0 70px !important; }
+  .contact h2 {
+    margin-top: 80px; }
+  .contact h3 {
+    margin-bottom: 45px; }
+  .contact .contact-intro {
+    color: #999;
+    font-size: 20px;
+    font-family: initial;
+    letter-spacing: 1.5px;
+    line-height: 1.7; }
+
+/* end (contact) section */
 @media screen and (max-width: 1200px) {
   .header-text h1 {
     font-size: 50px !important; }
@@ -282,22 +355,21 @@ header {
     font-size: 18px !important; }
 
   .about-img, .experience-img {
-    height: 700px;
+    height: 100vh;
     background-position: center; }
 
-  .skills-img {
-    background-position: top;
-    height: 70vh; } }
+  .skills-img, .clients-img, .contact-img {
+    background-position: center top;
+    height: 100vh; } }
 @media screen and (max-width: 768px) {
-  h2, h3, p {
-    text-align: center !important; }
-
   h2 {
-    font-size: 60px !important;
-    text-align: center; }
+    font-size: 60px !important; }
 
   h3 {
-    font-size: 30px; }
+    font-size: 35px; }
+
+  p {
+    font-size: 20px !important; }
 
   .header-text h1 {
     font-size: 33px !important; }
@@ -310,11 +382,34 @@ header {
   button {
     font-size: 16px !important; }
 
-  .about, .works {
-    padding: 0 35px !important; }
+  .small {
+    padding: 0 35px !important; } }
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 40px !important; }
 
-  .experience h4 {
-    text-align: center;
-    display: block; } }
+  h3 {
+    font-size: 25px; }
+
+  p {
+    font-size: 16px !important; }
+
+  .small {
+    padding: 0 25px !important; }
+
+  .say {
+    float: none !important;
+    width: 90% !important;
+    margin-top: 20px; }
+
+  .say p {
+    margin-bottom: 10px !important; }
+
+  .clients-say img {
+    width: auto !important; }
+
+  .works-imgs .imgs {
+    height: 200px !important;
+    max-width: 450px !important; } }
 
 /*# sourceMappingURL=style.css.map */
