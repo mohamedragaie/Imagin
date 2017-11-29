@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animation.css">
         <!--[if lt IE 9]>
             <script src="js/html5shiv.min.js"></script>
             <script src="js/respond.min.js"></script>
@@ -28,22 +29,21 @@
                     <div class="scroll-bar">
                         <div class="brand d-none d-lg-block">Ragaie</div>
                         <ul class="side-bar d-none d-lg-block">
-                            <li><a class="icon-bar active" href="#" data-value="home"><i class="fa fa-home"></i><br class="d-none d-lg-block">Home</a></li>
-                            <li><a href="#" data-value="about"><i class="fa fa-user"></i><br class="d-none d-lg-block">About</a></li>
-                            <li><a href="#" data-value="works"><i class="fa fa-briefcase"></i><br class="d-none d-lg-block">Work</a></li>
-                            <li><a href="#" data-value="experience"><i class="fa fa-lightbulb-o"></i><br class="d-none d-lg-block">Experience</a></li>
-                            <li><a href="#" data-value="skills"><i class="fa fa-bar-chart-o"></i><br class="d-none d-lg-block">Skills</a></li>
-                            <li><a href="#" data-value="clients"><i class="fa fa-heart-o"></i><br class="d-none d-lg-block">Clients</a></li>
-                            <li><a href="#" data-value="contact"><i class="fa fa-phone"></i><br class="d-none d-lg-block">Contact</a></li>
+                            <li><a id="home-b" class="icon-bar active" href="#" data-value="home"><i class="fa fa-home"></i><br class="d-none d-lg-block">Home</a></li>
+                            <li><a id="about-b" href="#" data-value="about"><i class="fa fa-user"></i><br class="d-none d-lg-block">About</a></li>
+                            <li><a id="works-b" href="#" data-value="works"><i class="fa fa-briefcase"></i><br class="d-none d-lg-block">Portfolio</a></li>
+                            <li><a id="experience-b" href="#" data-value="experience"><i class="fa fa-lightbulb-o"></i><br class="d-none d-lg-block">Experience</a></li>
+                            <li><a id="skills-b" href="#" data-value="skills"><i class="fa fa-bar-chart-o"></i><br class="d-none d-lg-block">Skills</a></li>
+                            <li><a id="contact-b" href="#" data-value="contact"><i class="fa fa-phone"></i><br class="d-none d-lg-block">Contact</a></li>
                         </ul>
                     </div>
                 </aside>
         <!-- end sid bar -->
                 <header class="row col-12 col-lg-10 no-gutters clearfix justify-content-between" id="home">
-                    <div class="header-text align-self-center">
+                    <div class="header-text align-self-center animated fadeInRight">
                         <h1>CLEAR THINKING.<br>MADE VISUAL.</h1>
                         <p>Mohamed Ragaie • Front-end Developer</p>
-                        <button class="my-button" data-value="about"><i class="fa fa-chevron-down"></i> LEARN MORE</button>
+                        <button class="my-button animated fadeInUp" data-value="about"><i class="fa fa-chevron-down"></i> LEARN MORE</button>
                     </div>
                 </header>
             </div>
@@ -53,9 +53,14 @@
                 <div class="about small col-12 col-xl-8" id="about">
                     <h2 class="main-h">About.</h2>
                     <h3 class="second-h">INSPIRED BY DIFFERENCE.</h3>
-                    <p class="about-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur a nisl a tincidunt. Etiam placerat velit sem, vel suscipit augue fermentum nec. Sociis natoque penatibus et magnis dis.</p>
-                    <P>Parturient montes, nascetur ridiculus mus. Maecenas ac finibus turpis. Vivamus et elit in leo pretium pharetra. Sed lobortis urna turpis, id ultricies dolor pharetra ac. Proin suscipit odio non libero ullamcorper, sit amet tincidunt lacus porta. Aenean sodales lectus ex, non sagittis nibh ultricies at. Aliquam nec dolor posuere, vulputate mauris at, fermentum Donec ligula metus, hendrerit at malesuada vel, facilisis sit amet dui. Aliquam erat volutpat. Nulla eget ornare dolor. Pellentesque convallis dui ante, eu pretium ipsum bibendum fermentum. Proin dui arcu, mattis non ultricies ac, pellentesque eget ipsum. Nullam tincidunt orci in interdum facilisis. Vestibulum eu neque et mauris vestibulum pretium vel vitae enim. Vestibulum id ipsum risus. Suspendisse lectus tortor, pretium ut orci vitae, mollis iaculis risus.</P>
-                    <button data-value="works"><i class="fa fa-chevron-down"></i> WORK</button>
+                    <div class="about-intro">
+                        <p><i class="fa fa-user"></i> MOHAMED RAGAIE</p>
+                        <p><i class="fa fa-birthday-cake"></i> 01 July 1992</p>
+                        <p><i class="fa fa-home"></i> Cairo, Egypt</p>
+                        <p><i class="fa fa-university"></i> Mansoura university, Bachelor of law 2014</p>
+                    </div>
+                    <P>I'm a freelance front-end web developer with experience 1+ year. I have sharp attention for details, strong management and communication skills . I have strong experience with Internet searching. Self study is the most important resource for me to learn anything and everything. I have a capability to work with a teamwork. Experienced Web Designer with a demonstrated history of working in the design industry. I have the ability to create creative websites. Skilled in WordPress, Html5, Cascading Style Sheets (CSS3), JavaScript, jQuery, Angular2, bootstrap, sass, Adobe Photoshop, and Adobe Illustrator  </P>
+                    <button data-value="works"><i class="fa fa-chevron-down"></i> WORKS</button>
                 </div>
                 <div class="about-img col-12 col-xl-4"></div>
             </div>
@@ -124,16 +129,21 @@
     <!-- start (experience) section -->
             <div class="row no-gutters ml-auto col-lg-10">
                 <div class="experience small col-12 col-xl-8" id="experience">
-                    <h2>Work<br>Skills.</h2>
+                    <h2>Experience.</h2>
                     <h3>GREAT DESIGN MATTERS.</h3>
-                    <p class="experience-intro">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate provident suntin.</p>
-                    <h4>01. DIGITAL.</h4>
-                    <P>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliqui. Quos dolores et quas molestias un occaecati.</P>
-                    <h4>02. BRANDING.</h4>
-                    <P>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliqui. Quos dolores et quas molestias un occaecati.</P>
-                    <h4>03. MARKETING.</h4>
-                    <P>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliqui. Quos dolores et quas molestias un occaecati.</P>
-                        
+                    <p class="experience-intro">Over 1 year of experience designing for the web, and specialize in the areas of UI development . I'm a creative problem solver, self motivated, and have a stubborn eye for detail. I have gained a lot of experience, run some projects I love simple clean designs and gentle use of color.</p>
+                    
+                    <h4>FRONT-END WEB DEVELOPER</h4>
+                    <h5>Egysite Co. | Feb 2017 - Sep 2017 </h5>
+                    <P> I was a front-end web developer in Egysite company. I start to work here as UI developer. I have the creativity to create creative responsive websites . after that my company ask me for learn wordpress and I learned WordPress from scratch.</P>
+                    
+                    <h4>UI DEVELOPER</h4>
+                    <h5>Elzero web school | Sep 2016 - Feb 2017</h5>
+                    <P>I started to learn UI development from the Internet. at the first time I have aproplem with self study , but after that self study become the most important resource to learn anything. I think the person who can learn by self study, he can learn anything any time. </P>
+                    
+                    <h4>GRAPHIC DESIGNER</h4>
+                    <h5>Mar 2016 - Sep 2016</h5>
+                    <P>I started to learn Adobe Photoshop, Illustrator and I have experience with creating, editing wonderful designs with creativity to choosing colors and merging</P>
                     <button data-value="skills"><i class="fa fa-chevron-down"></i> SKILLS</button>
                 </div>
                 <div class="experience-img col-12 col-xl-4"></div>
@@ -145,19 +155,8 @@
                 <div class="skills small col-12 col-xl-8" id="skills">
                     <h2>Skills.</h2>
                     <h3>RESULTS DRIVEN DESIGN.</h3>
-                    <p class="skills-intro">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in.</p>
-                    <div>
-                        <div class="progress-h">PHOTOSHOP 85%</div>
-                        <div class="progress-pirsent">
-                            <span style="width: 85%;"></span>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="progress-h">ILLUSTRATOR  75%</div>
-                        <div class="progress-pirsent">
-                            <span style="width: 75%;"></span>
-                        </div>
-                    </div>
+                    <p class="skills-intro">Experienced Web Designer with a demonstrated history of working in the design industry. I have the ability to create creative websites. Skilled in WordPress, Html5, Cascading Style Sheets (CSS3), JavaScript, jQuery, Angular2, bootstrap, sass, Adobe Photoshop, and Adobe Illustrator .</p>
+                    
                     <div>
                         <div class="progress-h">HTML/CSS 95%</div>
                         <div class="progress-pirsent">
@@ -177,7 +176,19 @@
                         </div>
                     </div>
                     <div>
-                        <div class="progress-h">ANGULAR 65%</div>
+                        <div class="progress-h">BOOTSTRAP 95%</div>
+                        <div class="progress-pirsent">
+                            <span style="width: 95%;"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="progress-h">SASS 98%</div>
+                        <div class="progress-pirsent">
+                            <span style="width: 98%;"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="progress-h">ANGULAR-2 65%</div>
                         <div class="progress-pirsent">
                             <span style="width: 65%;"></span>
                         </div>
@@ -188,55 +199,63 @@
                             <span style="width: 70%;"></span>
                         </div>
                     </div>
+                    <div>
+                        <div class="progress-h">PHOTOSHOP 85%</div>
+                        <div class="progress-pirsent">
+                            <span style="width: 85%;"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="progress-h">ILLUSTRATOR  75%</div>
+                        <div class="progress-pirsent">
+                            <span style="width: 75%;"></span>
+                        </div>
+                    </div>
                     <h4>THE USER MUST COME FIRST</h4>
-                    <P>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus repudiandae et molestiae.</P>
-                    <button data-value="clients"><i class="fa fa-chevron-down"></i> CLIENTS</button>
+                    <P>client is a major strength, with effective visual design driving brand recognition and customer response.
+                    As a creative thinker, I work efficiently and effectively whilst exploring options within the task at hand. Great communication and teamwork are skills you can check off on the list and when it comes to tight deadlines or a stressful situation, I’m willing to go the extra mile to get a job done and being a little bit of a perfectionist, I ensure that all the work I produce is top quality.</P>
                 </div>
                 <div class="skills-img col-12 col-xl-4"></div>
             </div>
     <!-- end (skills) section -->
-    <!-- start (clients) section -->
-            <div class="row no-gutters ml-auto col-lg-10 clear-fix">
-                <div class="clients small col-12 col-xl-8" id="clients">
-                    <h2>Clients.</h2>
-                    <h3>MAKE A DIFFERENCE.</h3>
-                    <p class="clients-intro">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate provident suntin.</p>
-                    <div class="clients-say clear-fix">
-                        <img src="images/Person-of-Interest-Baby-Blue-Episode-17.jpg">
-                        <div class="say">
-                            <p>“Phasellus vulputate turpis tincidunt, aliquam quam in, accumsan massa. Donec feugiat ultrices molestie etiam venenatis.”</p>
-                            <span>OXANA GRAND</span>
-                        </div>
-                    </div>
-                    <div class="clients-say clear-fix">
-                        <img src="images/5-Signs-Youre-Dating-A-Toxic-Person.Still002-150x150.jpg">
-                        <div class="say">
-                            <p>“Phasellus vulputate turpis tincidunt, aliquam quam in, accumsan massa. Donec feugiat ultrices molestie etiam venenatis.”</p>
-                            <span>HANNAH THOMPSON</span>
-                        </div>
-                    </div>
-                    <div class="clients-say clear-fix">
-                        <img src="images/TatianaKorsakova_02.person-small.jpg">
-                        <div class="say">
-                            <p>“Phasellus vulputate turpis tincidunt, aliquam quam in, accumsan massa. Donec feugiat ultrices molestie etiam venenatis.”</p>
-                            <span>EMILY ROSE</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="clients-img col-12 col-xl-4"></div>
-            </div>
-    <!-- end (clients) section -->
-    <!-- start (clients) section -->
-            <div class="row no-gutters ml-auto col-lg-10 clear-fix">
+   
+    <!-- start (contact) section -->
+            <div class="row no-gutters ml-auto col-lg-10">
                 <button class="contact-b col-12" data-value="contact"><i class="fa fa-chevron-down"></i> CONTACT</button>
-                <div class="contact small col-12 col-xl-8" id="contact">
-                    <h2>Contact.</h2>
-                    <h3>MAKE DIFFERENCE.<h3>
-                    <p class="contact-intro">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate provident suntin.</p>
+                <div class="contact row small col-12 col-xl-8" id="contact">
+                    <div>
+                        <h2>Contact.</h2>
+                        <h3>I will be happy if you contact me.</h3>
+                    </div>
+                    
+                    <div class="contact-details col-12 col-md-6">
+                        <div class="contact-text">
+                            <div style="float: left; width: 15%;"><i style="margin-top: 15px" class="fa fa-phone fa-3x"></i></div>
+                            <div><p> PHONE<br> 01000536263</p></div>
+                        </div>
+
+                        <div class="contact-text">
+                            <div style="float: left; width: 15%;"><i style="margin-top: 15px" class="fa fa-envelope fa-3x"></i></div>
+                            <div>
+                                <p> Email<br> 
+                                    <a style="text-decoration: none; color: #444;" href="mailto:m.ragaie7@gmail.com">m.ragaie7@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="social">
+                            <h3>Social network</h3>
+                            <a href="https://www.facebook.com/mohamed.ragaiee" target="_blank"><i class="fa fa-facebook fa-4x"></i></a>
+                            <a href="https://www.linkedin.com/in/mohamed-ragaie-7a8189139/" target="_blank"><i class="fa fa-linkedin fa-4x"></i></a>
+                            <a href="https://www.facebook.com/mohamed.ragaiee" target="_blank"><i class="fa fa-twitter fa-4x"></i></a>
+                        </div> 
+                    </div>
+                    
                 </div>
-                <div class="contact-img col-12 col-xl-4"></div>
+                <div class="contact-img col-12 col-xl-4 ml-auto"></div>
             </div>
-    <!-- end (clients) section -->
+    <!-- end (contact) section -->
 
 
         </div>

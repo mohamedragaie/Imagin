@@ -8,7 +8,7 @@
   height: 50px;
   cursor: pointer; }
 
-.main-h, .works h2, .experience h2, .skills h2, .clients h2, .contact h2 {
+.main-h, .works h2, .experience h2, .skills h2, .contact h2 {
   font-size: 100px;
   margin-bottom: 20px;
   font-weight: 700;
@@ -16,7 +16,7 @@
   color: #dde;
   margin-top: 80px; }
 
-.second-h, .works h3, .experience h3, .skills h3, .clients h3, .contact h3 {
+.second-h, .works h3, .experience h3, .skills h3, .contact h3 {
   color: #333;
   font-weight: 700;
   margin-bottom: 20px; }
@@ -139,16 +139,20 @@ header {
   padding: 0 70px !important; }
   .about h2 {
     margin-top: 80px; }
+  .about h3 {
+    margin-bottom: 40px; }
   .about p {
     color: #999;
     font-size: 19px;
     line-height: 1.7; }
-  .about .about-intro {
-    color: #bbb;
+  .about .about-intro p {
+    color: #666;
     font-size: 20px;
     font-family: initial;
     letter-spacing: 1.5px;
     line-height: 1.7; }
+  .about .about-intro i {
+    color: #F4AD24; }
   .about button {
     width: 110px;
     font-size: 18px;
@@ -218,6 +222,9 @@ header {
     border-bottom: 1px solid #F4AD24;
     display: inline-block;
     padding: 0 5px 20px; }
+  .experience h5 {
+    color: #aaa;
+    font-size: 18px; }
   .experience p {
     color: #6F8890;
     line-height: 2.5; }
@@ -239,7 +246,8 @@ header {
   height: 100%; }
 
 .skills {
-  padding: 0 70px !important; }
+  padding: 0 70px !important;
+  margin-bottom: 35px; }
   .skills h2 {
     margin-top: 80px; }
   .skills h3 {
@@ -273,53 +281,9 @@ header {
     height: 100%; }
 
 /* end (skills) section */
-/* start (clients) section */
-.clients-img {
-  background-image: url(../images/testimonial_bg.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 100%; }
-
-.clients {
-  padding: 0 70px !important;
-  background-color: #1C212A; }
-  .clients h2 {
-    color: #282F3C; }
-  .clients h3 {
-    margin-bottom: 45px;
-    color: #fff; }
-  .clients .clients-intro {
-    color: #6F8890;
-    font-size: 20px;
-    font-family: initial;
-    letter-spacing: 1.5px;
-    line-height: 2;
-    margin-bottom: 70px; }
-  .clients .clients-say {
-    margin-bottom: 65px;
-    overflow: hidden; }
-    .clients .clients-say img {
-      width: 22%; }
-    .clients .clients-say .say {
-      width: 75%;
-      float: right; }
-      .clients .clients-say .say p {
-        color: #eee;
-        margin-bottom: 22px;
-        line-height: 1.7;
-        font-size: 20px; }
-      .clients .clients-say .say span {
-        color: #555;
-        font-weight: bold;
-        font-size: 20px;
-        letter-spacing: 3px; }
-  .clients .clients-say:last-child {
-    margin-bottom: 140px; }
-
-/* end (clients) section */
 /* start (contact) section */
 .contact-img {
-  background-image: url(../images/contact_bg.jpg);
+  background-image: url("../images/contact_bg.jpg");
   background-position: center top;
   background-size: cover;
   height: 100%; }
@@ -330,17 +294,29 @@ header {
   font-size: 25px; }
 
 .contact {
-  padding: 0 70px !important; }
+  padding: 0 70px !important;
+  margin-bottom: 90px; }
   .contact h2 {
-    margin-top: 80px; }
+    margin-top: 90px; }
   .contact h3 {
     margin-bottom: 45px; }
-  .contact .contact-intro {
-    color: #999;
-    font-size: 20px;
-    font-family: initial;
-    letter-spacing: 1.5px;
-    line-height: 1.7; }
+  .contact .contact-text {
+    overflow: hidden; }
+    .contact .contact-text p {
+      font-size: 18px;
+      color: #444; }
+    .contact .contact-text i {
+      color: #F4AD24;
+      width: 51px; }
+    .contact .contact-text a:hover {
+      color: #007BFF !important; }
+  .contact .social {
+    text-align: center; }
+    .contact .social h3 {
+      font-size: 25px;
+      color: #666; }
+    .contact .social a {
+      margin-right: 15px; }
 
 /* end (contact) section */
 @media screen and (max-width: 1200px) {
@@ -383,7 +359,15 @@ header {
     font-size: 16px !important; }
 
   .small {
-    padding: 0 35px !important; } }
+    padding: 0 35px !important; }
+
+  .social {
+    text-align: left !important;
+    margin-top: 30px; }
+    .social h3 {
+      margin-bottom: 25px !important; }
+    .social i {
+      font-size: 30px !important; } }
 @media screen and (max-width: 576px) {
   h2 {
     font-size: 40px !important; }
@@ -411,5 +395,8 @@ header {
   .works-imgs .imgs {
     height: 200px !important;
     max-width: 450px !important; } }
+@keyframes skills {
+  0% {
+    width: 0%; } }
 
 /*# sourceMappingURL=style.css.map */
